@@ -89,7 +89,8 @@ button:hover{
 .card_style{
     display: flex;
     padding-left: 15px;
-    justify-content: center;
+    gap: 5px;
+    justify-content:center;
     flex-direction: column;
     background-color: aliceblue;
     height: 100px;
