@@ -7,9 +7,9 @@ async function carregarProdutos(){
 
     conteiner.innerHTML = produtos.map(p =>`
         <div class="card_style">
-            <p class="titulo">Título: Dom Casmurro</p>
-            <p class="autor">Autor: Machado de Assis</p>
-            <p class="valor">R$: 79.99</p>
+            <p class="titulo">${p.titulo}</p>
+            <p class="autor">${p.autor}</p>
+            <p class="valor">Preço: R$ ${p.valor}</p>
         </div>
     `).join("")
 }
