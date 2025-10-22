@@ -4,40 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livraria</title>
+    <link rel="icon" href="/FRONTEND/svg/book.svg">
     <link rel="stylesheet" href="style.css">    
-    <script src="/FRONTEND/script.js"></script>
+    <script src="/FRONTEND/script.js" defer></script>
 </head>
 <body>
     <header>
-        <img class="svg_book" src="/svg/book.svg">
+        <img class="svg_book" src="./svg/book.svg">
     </header>
 
     <main>
         <div class="left_screen">
             <div id="div_cards" class="div_cards">
-                <div class="card_style">
-                    <p class="titulo">Título: Dom Casmurro</p>
-                    <p class="autor">Autor: Machado de Assis</p>
-                    <p class="valor">R$: 79.99</p>
-                </div>
-                <div class="card_style">
-                    <p class="titulo">Título: Dom Casmurro</p>
-                    <p class="autor">Autor: Machado de Assis</p>
-                    <p class="valor">R$: 79.99</p>
-                </div>
-                <div class="card_style">
-                    <p class="titulo">Título: Dom Casmurro</p>
-                    <p class="autor">Autor: Machado de Assis</p>
-                    <p class="valor">R$: 79.99</p>
-                </div>
+                
             </div>
         </div>
         <div class="right_screen">
             <div class="div_form">
                 <form id="id_form" class="form_style">
-                    <input type="text" placeholder="Título" name="titulo">
-                    <input type="text" placeholder="Autor" name="autor">
-                    <input type="text" placeholder="Valor" name="valor">
+                    <input type="text" placeholder="Título" name="titulo" required>
+                    <input type="text" placeholder="Autor" name="autor" required>
+                    <input type="text" placeholder="Valor" name="valor" required>
                     <button type="submit">Adicionar</button>
                 </form>
             </div>
