@@ -21,6 +21,9 @@ mongoose.connect(process.env.MONGO_KEY)
 
     .catch((err) => console.log(err))
 
+app.get("/", (req,res) => {
+    res.sendFile(__dirname + "/FRONTEND/index.html")
+})
 app.post("/livro", async (req, res) =>{
     const{titulo, autor, valor} = (req.body)
         const novoLivro ={
